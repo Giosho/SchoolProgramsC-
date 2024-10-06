@@ -1,28 +1,11 @@
-﻿int points = int.Parse(Console.ReadLine());
+﻿Console.Write("Въведи двуцифрено число: ");
 
-double bonus = 0;
+int numbers = int.Parse(Console.ReadLine());
 
-if (points <= 100)
-{
-    bonus = 5;
-}
-else if (points <= 1000)
-{
-    bonus = points * 0.2;
-}
-else if (points > 1000)
-{
-    bonus = points * 0.1;
-}
+int ed = numbers % 10;
 
-if (points % 2 == 0)
-{
-    bonus = bonus + 1;
-}
-else if (points % 10 == 5)
-{
-    bonus = bonus + 2;
-}
+int des = numbers / 10;
 
-Console.WriteLine(bonus);
-Console.WriteLine(points + bonus);
+int sum = ed + des;
+
+Console.WriteLine($"{ed} + {des} = {sum}");
