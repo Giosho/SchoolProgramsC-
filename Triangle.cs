@@ -1,11 +1,11 @@
 Console.WriteLine("Въведи число a -> ");
 
-double a = double.Parse(Console.ReadLine());
+int a = int.Parse(Console.ReadLine());
 
 Console.WriteLine("Въведи число h -> ");
 
-double h = double.Parse(Console.ReadLine());
+int h = int.Parse(Console.ReadLine());
 
-double sum = a * h / 2;
+int sum = a * h / 2;
 
 Console.WriteLine($"Лицето е = {sum}");
